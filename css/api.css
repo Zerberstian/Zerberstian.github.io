@@ -27,7 +27,7 @@ h1, h2 {
 .add-note-section, .notes-list-section {
     margin-bottom: 40px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #eee;
+    /*border-bottom: 1px solid #eee;*/
 }
 .notes-list-section:last-child {
     border-bottom: none;
@@ -186,12 +186,38 @@ h1, h2 {
     border-radius: 8px;
 }
 
-.searchNotesInput .searchNotesButton {
-    padding: 10px 15px;
-    border: none;
+.searchNotesInput, .searchNotesButton {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: linear-gradient(0deg, #f1f1f1 0%, #fdfdfd 100%);
+    
+}
+
+.notes-backup-delete {
+    
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+#clear-button {
+    border-radius: 5px;
+    background-color: #f55061;
     color: white;
+    padding: 10px 15px;
+}
+#clear-button:hover {
+    background-color: #e22e2e;
+}
+#export-button, #import-button {
+    border-radius: 5px;
+    background-color: #5956e7a9;
+    color: white;
+    padding: 10px 15px;
+}
+#export-button:hover, #import-button:hover {
+    background-color: #3634a3d3;
 }
