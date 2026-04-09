@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    cursor: url("../assets/Meme_Cursor_32.png"), auto;
+    margin: 0;
+    background-image: url("https://images8.alphacoders.com/135/thumb-1920-1352211.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    color: white;  
+}
+
+a, button {
+    cursor: url("../assets/Meme_Pointer_32.png"), pointer;
+}
+
+.content-box {
+    width: 80%;
+    margin: 100px auto;
+    background: linear-gradient(
+        80deg,
+        rgba(113, 159, 245, 0.85) 0%,
+        rgba(0, 0, 0, 0.85) 50%,
+        rgba(123, 48, 209, 0.87) 100%
+        );
+    padding: 20px;
+    border-radius: 20px;   
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+.headlines{
+    text-decoration-line: underline;
+    color: rgba(16, 201, 201, 1);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.85);
+    padding: 10px 0;
+    z-index: 1000; /* fixiert Naavbar oben  (immer im fg ) */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.uebersicht a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.zoom-wrapper {
+    width: 600px;
+    margin: 50px auto;
+    overflow: visible; /* damit das gezoomte Bild sichtbar bleibt */
+}
+
+#map-img {
+    /*display: block;*/ /* <-- ka warum du noch im code*/
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.palimg {
+    margin: 0 auto;
+    width: 80%; 
+    height: auto;
+}
+
+#Lieblingspals, #karteundregionen, #Items, #Guide {
+    scroll-margin-top: 100px;
+}
+
+.block-list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 Spalten */
+    gap: 40px;
+}
+
+.item-Image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
